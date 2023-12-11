@@ -1,0 +1,42 @@
+@import url("./main.css");
+
+@mixin border {
+  border: 1px solid #333;
+}
+
+.info{
+  height: 900px;
+  display: flex;
+  .info_left_side{
+    margin-top: 110px;
+    width: 900px;
+    position: absolute;
+    left: 0;
+    .news{
+      height: 600px;
+      width:  800px;
+      @include border;
+    }
+    .newsflash{
+
+    }
+    .allcrypto{
+      
+    }
+  }
+
+  .info_right_side{
+    margin-top: 110px;
+    width: 400px;
+    height:  600px;
+    position: absolute;
+    right: 0;
+    @include border;
+    .today_descending{
+
+    }
+    .today_ascending{
+      
+    }
+  }
+}
