@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRBit</title>
+
+  <!-- 스타일 리셋 -->
+  <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+  <!-- 구글 폰트 noto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+  <!-- 부트스트랩 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/scss/boar.css">
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="logo">
+        <a href="/">로고부분</a>
+      </div>
+      <div class="main-menu">
+        <div class="market">
+          <a th:href="@{/market/market}">거래소</a>
+        </div>
+        <div class="exchange">  
+          <a th:href="@{/exchange/exchange}">입출금</a>
+        </div>
+        <div class="information">
+          <a th:href="@{/information/information}">코인정보</a>
+        </div>
+        <div class="board">
+          <a th:href="@{/board/board}">게시판</a>
+        </div>
+      </div>
+      <div class="signin">
+        <a th:href="@{/signin/signin}">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="info">
+    
+  </section>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
