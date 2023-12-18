@@ -1,6 +1,4 @@
-package com.basic.springbootbasic.controller;
-
-import org.springframework.stereotype.Controller;
+package com.basic.springbootbasic;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -10,15 +8,19 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 import java.util.UUID;
 
-@Controller
-public class MainController {
+@SpringBootTest
+public class GetAccountsTest {
 
-
-    public void getAccounts(){
+    @Test
+    @DisplayName("전체 계좌 조회")
+    void getAccounts() {
         String accessKey = System.getenv("UPBIT_OPEN_API_ACCESS_KEY");
         String secretKey = System.getenv("UPBIT_OPEN_API_SECRET_KEY");
         String serverUrl = System.getenv("UPBIT_OPEN_API_SERVER_URL");
@@ -44,9 +46,5 @@ public class MainController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
-
-
 }
