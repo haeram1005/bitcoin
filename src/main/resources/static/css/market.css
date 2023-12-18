@@ -255,20 +255,44 @@ header .signin {
 .market-main .market-bottom .askingrpice__up{
   position: absolute;
   top: 51px;
-  left: 0;
   height: 505px;
-  width: 300px;
+  width: 100%;
+}
+.market-main .market-bottom .askingprice__up__right{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: 167px;
+  background-color: #fff;
+}
+.market-main .market-bottom .askingprice__up__left{
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 290px;
   background-color: #fff;
 }
 .market-main .market-bottom .askingprice .askingprice__down{
   position: absolute;
   top: 557px;
-  right: 0;
   height: 505px;
-  width: 300px;
+  width: 100%;
+}
+.market-main .market-bottom .askingprice .askingprice__down__right{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: 290px;
   background-color: #fff;
 }
-.market-main .market-bottom .order {
+.market-main .market-bottom .askingprice .askingprice__down__left{
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 167px;
+  background-color: #fff;
+}
+.market-main .market-bottom .order{
   position: absolute;
   width: 480px;
   height: 800px;
