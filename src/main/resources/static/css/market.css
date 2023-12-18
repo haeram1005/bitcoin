@@ -1,0 +1,283 @@
+@import url("./main.css");
+
+body {
+  font-family: "Noto sans KR", "Nanum Gothic", sans-serif;
+  text-align: center;
+}
+img{
+  display: block;
+}
+.inner {
+  position: relative;
+  margin: 0 auto;
+  width: 1400px;
+  height: 100%;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid #333;
+  box-sizing: border-box;
+  z-index: 1;
+  background-color: #fff;
+}
+header .logo {
+  width: 200px;
+  height: 55px;
+  border: 1px solid #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .main-menu {
+  width: 800px;
+  height: 55px;
+  left: 300px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: 1px solid #333;
+}
+header .main-menu .market {
+  width: 180px;
+  height: 44px;
+  margin: auto 22px;
+  border: 1px solid #333;
+}
+header .main-menu .exchange {
+  width: 180px;
+  height: 44px;
+  margin: auto 22px;
+  border: 1px solid #333;
+}
+header .main-menu .information {
+  width: 180px;
+  height: 44px;
+  margin: auto 22px;
+  border: 1px solid #333;
+}
+header .main-menu .board {
+  width: 180px;
+  height: 44px;
+  margin: auto 22px;
+  border: 1px solid #333;
+}
+header .signin {
+  width: 200px;
+  height: 55px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: 1px solid #333;
+}
+
+/* MARKET-MAIN */
+.market-main {
+  position: relative;
+  margin-top: 110px;
+  background-color: #d8d9da;
+}
+.market-main .market-top {
+  width: 100%;
+  height: 840px;
+  padding-top: 20px;
+  position: relative;
+}
+.market-main .market-top .chart {
+  position: absolute;
+  width: 980px;
+  height: 800px;
+  background-color: #fff;
+}
+.market-main .market-top .quote {
+  position: absolute;
+  width: 400px;
+  height: 1220px;
+  right: 0;
+}
+.market-main .market-top .quote .quote__container{
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+.market-main .market-top .quote .quote__search{
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: 50px;
+  display: flex;
+  background-color: #fff;
+}
+.market-main .market-top .quote .quote__search input{
+  width: 380px;
+  height: inherit;
+  border-radius: 0;
+  border-bottom: none;
+  border: none;
+  padding-left: 15px;
+  outline-offset: 0;
+}
+.market-main .market-top .quote .quote__search input:focus{
+  outline: none;
+}
+.market-main .market-top .quote .quote__search .btn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0px;
+  border: none;
+}
+.market-main .market-top .quote .quote__menu{
+  position: absolute;
+  top: 51px;
+  width: inherit;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.market-main .market-top .quote .quote__menu ul{
+  height: 24px;
+  display: flex;
+  margin: auto 0;
+  padding: 0;
+}
+.market-main .market-top .quote .quote__menu ul li{
+  margin: 0 21px;
+}
+.market-main .market-top .quote .quote__sequence{
+  position: absolute;
+  top: 102px;
+  width: inherit;
+  height: 38px;
+  background-color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.market-main .market-top .quote .quote__sequence img{
+  width: 7px;
+  height: 8px;
+}
+.market-main .market-top .quote .quote__sequence ul{
+  position: relative;
+  width: inherit;
+  height: 21px;
+  margin: auto 0;
+  padding: 0;
+}
+.market-main .market-top .quote .quote__sequence a{
+  color: #c0c0c0;
+}
+.market-main .market-top .quote .quote__sequence li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.market-main .market-top .quote .name{
+  position: absolute;
+  width: 120px;
+  left: 0;
+}
+.market-main .market-top .quote .price{
+  position: absolute;
+  width: 80px;
+  left: 120px;
+}
+.market-main .market-top .quote .dfr{
+  position: absolute;
+  width: 80px;
+  right: 100px;
+}
+.market-main .market-top .quote .ta{
+  position: absolute;
+  width: 100px;
+  right: 0;
+}
+.market-main .market-top .quote .quote__items{
+  position: absolute;
+  top: 141px;
+  width: inherit;
+  height: 1479px;
+  background-color: #fff;
+}
+.market-main .market-top .quote .quote__items .quote__item{
+  height: 50px;
+  width: inherit;
+  border-bottom: 1px solid #d8d9da;
+}
+.market-main .market-top .quote .quote__items .quote__item ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.market-main .market-top .quote .quote__items .quote__item li{
+  font-size: 13px;
+}
+.market-main .market-top .quote .quote__items .quote__item strong{
+  font-size: 13px;
+}
+.market-main .market-top .quote .quote__items .quote__item h1{
+  font-size: 11px;
+}
+.market-main .market-bottom{
+  width: calc(100% - 420px);
+  height: 820px;
+  position: relative;
+}
+.market-main .market-bottom .askingprice{
+  position: absolute;
+  left: 0;
+  width: 480px;
+  height: 800px;
+  overflow: auto;
+}
+.market-main .market-bottom .askingprice__menu{
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+}
+.market-main .market-bottom .askingrpice__up{
+  position: absolute;
+  top: 51px;
+  left: 0;
+  height: 505px;
+  width: 300px;
+  background-color: #fff;
+}
+.market-main .market-bottom .askingprice .askingprice__down{
+  position: absolute;
+  top: 557px;
+  right: 0;
+  height: 505px;
+  width: 300px;
+  background-color: #fff;
+}
+.market-main .market-bottom .order {
+  position: absolute;
+  width: 480px;
+  height: 800px;
+  left: 500px;
+  background-color: #fff;
+}
+
+/* FOOTER */
+footer {
+  height: 110px;
+  border: 1px solid #333;
+}

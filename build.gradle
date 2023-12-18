@@ -33,11 +33,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    //NOTE:DB연결 JPA 추가
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // //NOTE:DB연결 JPA 추가
+     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     //NOTE:mysql
-    runtimeOnly 'com.mysql:mysql-connector-j'
+     runtimeOnly 'com.mysql:mysql-connector-j'
 }
 
 tasks.named('test') {
