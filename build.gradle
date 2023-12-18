@@ -33,10 +33,20 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    // //NOTE:DB연결 JPA 추가
-     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //NOTE:DB연결 JPA 추가
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     //NOTE:mysql
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+    //NOTE:json 추가
+    implementation 'org.json:json:20231013'
+    implementation 'com.google.code.gson:gson:2.7'
+
+    //NOTE:jwt
+    implementation 'com.auth0:java-jwt:4.4.0'
+    //NOTE:httpclient
+    implementation 'org.apache.httpcomponents:httpclient:4.5.14'
 
 }
 
