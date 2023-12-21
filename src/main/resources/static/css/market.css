@@ -1,5 +1,6 @@
 @import url("./main.css");
 
+
 body {
   font-family: "Noto sans KR", "Nanum Gothic", sans-serif;
   text-align: center;
@@ -13,7 +14,9 @@ img{
   width: 1400px;
   height: 100%;
 }
-
+span{
+  display: block;
+}
 /* HEADER */
 header {
   position: fixed;
@@ -245,6 +248,30 @@ header .signin {
   height: 800px;
   overflow: auto;
 }
+.market-main .market-bottom .askingprice .askingprice-list{
+  padding: 0;
+}
+.market-main .market-bottom .askingprice .askingprice-list li{
+  height: 50px;
+  margin-bottom: 1px;
+  position: relative;
+  display: flex;
+
+}
+.market-main .market-bottom .askingprice .askingprice-list li .price{
+  position: absolute;
+  right: 0;
+  width: 145px;
+  height: inherit;
+  background-color: #fff;
+}
+.market-main .market-bottom .askingprice .askingprice-list li .volume{
+  position: absolute;
+  left: 0;
+  width: 144px;
+  height: inherit;
+  background-color: #fff;
+}
 .market-main .market-bottom .askingprice__menu{
   position: absolute;
   top: 0;
@@ -257,6 +284,7 @@ header .signin {
   top: 51px;
   height: 505px;
   width: 100%;
+  padding-bottom: 2px;
 }
 .market-main .market-bottom .askingprice__up__right{
   position: absolute;
@@ -270,7 +298,6 @@ header .signin {
   height: 100%;
   left: 0;
   width: 290px;
-  background-color: #fff;
 }
 .market-main .market-bottom .askingprice .askingprice__down{
   position: absolute;
@@ -283,7 +310,6 @@ header .signin {
   height: 100%;
   right: 0;
   width: 290px;
-  background-color: #fff;
 }
 .market-main .market-bottom .askingprice .askingprice__down__left{
   position: absolute;
@@ -295,11 +321,67 @@ header .signin {
 .market-main .market-bottom .order{
   position: absolute;
   width: 480px;
-  height: 800px;
+  height: 480px;
   left: 500px;
+}
+.market-main .market-bottom .order .order-menu{
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 480px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
   background-color: #fff;
 }
-
+.market-main .market-bottom .order .order-menu .focus{
+  border-bottom: 2px solid red;
+  /* box-sizing: border-box; */
+}
+.market-main .market-bottom .order .order-menu li{
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.market-main .market-bottom .order .order__board{
+  position: absolute;
+  top: 51px;
+  width: 480px;
+  height: 429px;
+  background-color: #fff;
+  padding: 10px;
+}
+.market-main .market-bottom .order .order__board .option{
+  width: 460px;
+}
+.market-main .market-bottom .order .order__kind{
+  position: absolute;
+  top: 10px;
+  height: 50px;
+}
+.market-main .market-bottom .order .order__possible{
+  position: absolute;
+  top: 60px;
+  height: 50px;
+}
+.market-main .market-bottom .order .order__price{
+  position: absolute;
+  top: 110px;
+  height: 50px;
+}
+.market-main .market-bottom .order .order__quantity{
+  position: absolute;
+  top: 160px;
+  height: 100px;
+}
+.market-main .market-bottom .order .total__price{
+  position: absolute;
+  top: 260px;
+  height: 100px;
+}
 /* FOOTER */
 footer {
   height: 110px;
